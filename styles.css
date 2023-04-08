@@ -1,0 +1,141 @@
+/*font-family: 'Fraunces', serif;
+font-family: 'Montserrat', sans-serif;*/
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	width: 100%;
+	height: 100vh;
+	background-color: hsl(30, 38%, 92%);
+	font-family: 'Montserrat', sans-serif;
+	font-size: 14px;
+}
+
+img{
+	width: 100%;
+	border-top-right-radius: 10px;
+	border-top-left-radius: 10px;
+}
+
+h1{
+	color: hsl(212, 21%, 14%);
+}
+
+p{
+	line-height: 1.5;
+}
+
+li{
+	display: inline;
+	list-style-type: none;
+}
+
+button{
+	background-color: hsl(158, 36%, 37%);
+	border-style: none;
+	font-family: inherit;
+	border-radius: 10px;
+	padding: 10px;
+	color: #FFF;
+	font-size: 11px;
+}
+
+button:hover{
+	background-color: hsl(158, 36%, 20%);
+}
+
+svg{
+	margin-right: 10px;
+}
+
+p, span, .original-price{
+	color: hsl(228, 12%, 48%);
+	font-size: 11px;
+
+}
+
+h1, .discount{
+	font-family: 'Fraunces', serif;
+	font-size: 23px;
+}
+
+
+.card{
+	display: flex;
+	flex-direction: inherit;
+	justify-content: center;
+	background-color: #FFF;
+	width: 70%;
+	border-radius: 10px;
+}
+
+.informations{
+	display: flex;
+	flex-direction: inherit;
+	row-gap: 10px;
+	padding: 1.5rem;
+}
+
+.discount{
+	color: hsl(158, 36%, 37%);
+}
+
+.original-price{
+	text-decoration: line-through;
+	margin-left: 10px;
+}
+
+.desktop-img{
+	display: none;
+}
+
+
+
+@media (min-width: 760px){
+	.mobile-img{
+		display: none;
+	}
+
+	.desktop-img{
+		display: block;
+		width: 100%;
+		border-radius: 10px 0 0 10px;
+	}
+
+	.card{
+		flex-direction: row;
+		width: 600px;
+	}
+
+	.product{
+		width: 50%;
+	}
+
+	.informations{
+		width: 50%;
+		flex-direction: column;
+		row-gap: 25px;
+	}
+
+	h1, .discount{
+		font-size: 35px;
+		line-height: 1;
+	}
+
+	p, span, button, .original-price{
+		font-size: 14px;
+	}
+
+	button{
+		padding: 1rem;
+	}
+
+}
